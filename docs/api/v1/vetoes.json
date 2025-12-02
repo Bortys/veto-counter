@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "generatedAt": "2025-12-02T20:55:33Z",
+  "subject": {
+    "name": "Karol Nawrocki",
+    "termStart": "2025-08-06"
+  },
+  "items": [
+    {
+      "id": "veto-2025-10-17-kodeks-wyborczy",
+      "vetoDate": "2025-10-17",
+      "actTitle": "Ustawa z dnia 17 października 2025 r. o zmianie ustawy – Kodeks wyborczy",
+      "actDate": "2025-10-17",
+      "topicTags": [
+        "prawo wyborcze"
+      ],
+      "sourceEventId": "event-2025-10-17-example",
+      "presidentSite": {
+        "eventUrl": "https://www.prezydent.pl/prawo/ustawy-zawetowane/dwie-ustawy-zawetowane-przez-prezydenta-rp%2C111126",
+        "pdfUrls": [],
+        "summaryOfficial": "[PRZYKŁAD] Streszczenie z komunikatu (bez komentarza)."
+      },
+      "parliament": {
+        "sejm": {
+          "matched": false,
+          "term": 10,
+          "printNo": "1389",
+          "apiUrl": "https://api.sejm.gov.pl/sejm/term10/prints/1389",
+          "status": "unknown",
+          "lastStage": "Wniosek Prezydenta (VETO)",
+          "lastUpdated": "2025-10-17"
+        }
+      },
+      "publishing": {
+        "published": false
+      },
+      "quality": {
+        "confidence": 0.6,
+        "needsReview": true,
+        "parserNotes": [
+          "To rekord przykładowy do uruchomienia UI."
+        ]
+      }
+    }
+  ]
+}

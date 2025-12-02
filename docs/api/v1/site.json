@@ -1,0 +1,27 @@
+{
+  "baseHref": "/veto-counter/",
+  "subject": {
+    "name": "Karol Nawrocki",
+    "roleLabel": "Prezydent RP (monitoring wet)",
+    "termStart": "2025-08-06",
+    "portrait": {
+      "url": "assets/portrait-placeholder.svg",
+      "credit": "Placeholder — podmień na legalną fotografię + atrybucję.",
+      "style": "monochrome"
+    }
+  },
+  "definitions": {
+    "vetoCountRule": "Liczymy każdą ustawę przekazaną Sejmowi do ponownego rozpatrzenia (weto prezydenckie).",
+    "exclude": [
+      "Skierowanie do TK — pokazywane osobno."
+    ]
+  },
+  "sources": {
+    "presidentVetoListUrl": "https://www.prezydent.pl/prawo/ustawy-zawetowane",
+    "sejmApiBaseUrl": "https://api.sejm.gov.pl"
+  },
+  "updatePolicy": {
+    "fetchEveryHours": 6,
+    "snapshotRetentionDays": 30
+  }
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <base href="/veto-counter/"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Metodologia</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <header class="header">
+  <nav class="nav" aria-label="Główna nawigacja">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">Licznik wet</div>
+        <div class="small">wersja obywatelska · fakty i źródła</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Licznik</a>
+      <a href="lista/index.html">Lista wet</a>
+      <a href="jak-to-dziala/index.html">Jak działa weto?</a>
+      <a href="proces/index.html">Proces ustawy</a>
+      <a href="historia/index.html">Historia</a>
+      <a href="metodologia/index.html">Metodologia</a>
+      <a href="api/index.html">API</a>
+      <button id="toggleModeBtn" class="btn" type="button" aria-label="Przełącz tryb wizualny/minimalny">
+        Tryb: <span id="modeLabel">Wizualny</span>
+      </button>
+    </div>
+  </nav>
+</header>
+  <main id="main" class="container">
+    
+<h1 style="margin:8px 0 4px;font-size:24px">Metodologia i źródła</h1>
+<div class="card">
+  <h2 class="section-title" style="margin-top:0">Definicje</h2>
+  <ul style="margin:6px 0 0;color:var(--muted)">
+    <li><strong>Weto:</strong> przekazanie ustawy Sejmowi do ponownego rozpatrzenia (to liczymy).</li>
+    <li><strong>TK:</strong> kontrola prewencyjna (pokazujemy osobno).</li>
+  </ul>
+  <h2 class="section-title">Źródła</h2>
+  <ul style="margin:6px 0 0;color:var(--muted)">
+    <li><a href="https://www.prezydent.pl/prawo/ustawy-zawetowane" target="_blank" rel="noopener">prezydent.pl — Ustawy zawetowane</a></li>
+    <li><a href="https://api.sejm.gov.pl/prints.html" target="_blank" rel="noopener">Sejm API — Druki</a></li>
+    <li><a href="https://rcl.gov.pl/legislacja/proces-legislacyjny-w-polsce/" target="_blank" rel="noopener">RCL — Proces legislacyjny</a></li>
+  </ul>
+  <h2 class="section-title">Uwaga o jakości danych</h2>
+  <p style="margin:6px 0 0;color:var(--muted)">Jeśli parser nie dopasuje druku sejmowego — rekord dostaje znacznik <span class="tag">wymaga weryfikacji</span>.</p>
+</div>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="notice">
+      <strong>Neutralność:</strong> serwis prezentuje publicznie dostępne informacje i linki do źródeł. Bez ocen i bez rekomendacji.
+      <br/>
+      <strong>Licencje:</strong> fotografie i logotypy dodawaj wyłącznie, jeśli masz do tego prawo.
+    </div>
+    <div style="margin-top:10px">© 2025 · Źródła: prezydent.pl · Sejm API · ELI/ISAP · RCL.</div>
+  </div>
+</footer>
+  <script src="assets/app.js"></script>
+  
+</body>
+</html>

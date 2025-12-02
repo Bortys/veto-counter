@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "generatedAt": "2025-12-02T20:55:33Z",
+  "items": [
+    {
+      "id": "event-2025-10-17-example",
+      "date": "2025-10-17",
+      "title": "[PRZYKŁAD] Dwie ustawy zawetowane przez Prezydenta RP",
+      "url": "https://www.prezydent.pl/prawo/ustawy-zawetowane/dwie-ustawy-zawetowane-przez-prezydenta-rp%2C111126",
+      "pdfUrls": [],
+      "actCandidates": [
+        "Ustawa z dnia 17 października 2025 r. o zmianie ustawy – Kodeks wyborczy",
+        "Ustawa z dnia 17 października 2025 r. o zmianie ustawy o podatku dochodowym od osób prawnych"
+      ],
+      "extract": {
+        "hash": "sha256:example",
+        "parsedAt": "2025-12-02T20:55:33Z",
+        "parserVersion": "0.2.0"
+      }
+    }
+  ]
+}

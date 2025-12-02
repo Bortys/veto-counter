@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <base href="/veto-counter/"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Lista wet</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <header class="header">
+  <nav class="nav" aria-label="Główna nawigacja">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">Licznik wet</div>
+        <div class="small">wersja obywatelska · fakty i źródła</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Licznik</a>
+      <a href="lista/index.html">Lista wet</a>
+      <a href="jak-to-dziala/index.html">Jak działa weto?</a>
+      <a href="proces/index.html">Proces ustawy</a>
+      <a href="historia/index.html">Historia</a>
+      <a href="metodologia/index.html">Metodologia</a>
+      <a href="api/index.html">API</a>
+      <button id="toggleModeBtn" class="btn" type="button" aria-label="Przełącz tryb wizualny/minimalny">
+        Tryb: <span id="modeLabel">Wizualny</span>
+      </button>
+    </div>
+  </nav>
+</header>
+  <main id="main" class="container">
+    
+<h1 style="margin:8px 0 4px;font-size:24px">Lista wet (ustawy)</h1>
+<p class="small" style="margin:0 0 10px">Rekord = jedna ustawa objęta wetem.</p>
+<div class="filters" aria-label="Filtry">
+  <input id="q" class="input" type="search" placeholder="Szukaj po tytule lub dacie…" aria-label="Szukaj"/>
+  <select id="year" aria-label="Rok"><option value="">Wszystkie lata</option></select>
+  <select id="status" aria-label="Status w Sejmie"><option value="">Każdy status</option></select>
+  <label class="tag" style="cursor:pointer"><input id="needsReview" type="checkbox" style="margin-right:8px"/> tylko „wymaga weryfikacji”</label>
+  <div class="tag">Wynik: <strong id="count">0</strong></div>
+</div>
+<p id="loadError" class="notice" hidden>Nie udało się wczytać danych z API.</p>
+<div class="table-wrap" role="region" aria-label="Tabela wet" tabindex="0">
+  <table>
+    <thead><tr><th>Data</th><th>Ustawa</th><th>Druk</th><th>Status</th><th>Tagi</th><th>Linki</th></tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="notice">
+      <strong>Neutralność:</strong> serwis prezentuje publicznie dostępne informacje i linki do źródeł. Bez ocen i bez rekomendacji.
+      <br/>
+      <strong>Licencje:</strong> fotografie i logotypy dodawaj wyłącznie, jeśli masz do tego prawo.
+    </div>
+    <div style="margin-top:10px">© 2025 · Źródła: prezydent.pl · Sejm API · ELI/ISAP · RCL.</div>
+  </div>
+</footer>
+  <script src="assets/app.js"></script>
+  <script src="assets/list.js"></script>
+</body>
+</html>

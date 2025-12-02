@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <base href="/veto-counter/"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Licznik wet</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <header class="header">
+  <nav class="nav" aria-label="Główna nawigacja">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">Licznik wet</div>
+        <div class="small">wersja obywatelska · fakty i źródła</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Licznik</a>
+      <a href="lista/index.html">Lista wet</a>
+      <a href="jak-to-dziala/index.html">Jak działa weto?</a>
+      <a href="proces/index.html">Proces ustawy</a>
+      <a href="historia/index.html">Historia</a>
+      <a href="metodologia/index.html">Metodologia</a>
+      <a href="api/index.html">API</a>
+      <button id="toggleModeBtn" class="btn" type="button" aria-label="Przełącz tryb wizualny/minimalny">
+        Tryb: <span id="modeLabel">Wizualny</span>
+      </button>
+    </div>
+  </nav>
+</header>
+  <main id="main" class="container">
+    
+<section class="hero" aria-label="Licznik wet">
+  <div class="hero-inner">
+    <div class="card">
+      <div class="kicker">Weto prezydenckie (art. 122 ust. 5 Konstytucji) — liczymy ustawy przekazane Sejmowi do ponownego rozpatrzenia.</div>
+      <div class="score-title"><span id="subjectName">—</span> · kadencja od <span id="termStart">—</span></div>
+      <div class="score-value" id="countVeto" aria-label="Liczba wet">0000</div>
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px">
+        <div class="kicker">Ostatnia aktualizacja: <strong id="lastUpdated">—</strong></div>
+        <a class="btn" href="lista/index.html">Zobacz listę</a>
+      </div>
+      <p id="loadError" class="notice" hidden>Nie udało się wczytać danych (API JSON). Sprawdź czy /api/v1/ zwraca pliki.</p>
+    </div>
+    <aside class="card portrait" aria-label="Portret i atrybucja">
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <img src="assets/portrait-placeholder.svg" alt="Portret (placeholder — podmień na fotografię)."/>
+        <figcaption class="caption"><strong>Zdjęcie:</strong> placeholder — podmień na legalnie pozyskaną fotografię + atrybucję.</figcaption>
+      </figure>
+    </aside>
+  </div>
+</section>
+<section aria-label="Statystyki">
+  <div class="grid stats">
+    <div class="stat"><div class="label">Ustawy zawetowane</div><div class="value" id="vetoedActs">—</div></div>
+    <div class="stat"><div class="label">Komunikaty / wpisy</div><div class="value" id="vetoEvents">—</div></div>
+    <div class="stat"><div class="label">Skierowania do TK (osobno)</div><div class="value" id="tkReferrals">—</div></div>
+    <div class="stat"><div class="label">Metodologia</div><div class="value" style="font-size:14px;font-family:var(--sans);color:var(--muted)">Liczymy ustawy objęte wetem. Jeden wpis może dotyczyć wielu ustaw.</div></div>
+  </div>
+</section>
+<section aria-label="Ostatnie weto">
+  <h2 class="section-title">Ostatnia ustawa w wykazie</h2>
+  <div class="row">
+    <div class="card">
+      <div class="kicker">Tytuł ustawy</div>
+      <div style="font-weight:750;font-size:16px" id="lastVetoTitle">—</div>
+      <div class="small">Data weta: <span id="lastVetoDate">—</span></div>
+      <div class="small" id="lastVetoPrint">Druk sejmowy: —</div>
+      <div class="small" id="lastVetoStatus">Status: —</div>
+      <div style="margin-top:10px"><a class="btn" id="lastVetoLink" href="#" target="_blank" rel="noopener">—</a></div>
+    </div>
+    <div class="card">
+      <div class="kicker">Po co to jest?</div>
+      <p style="margin:6px 0 0;color:var(--muted)">
+        To narzędzie civic-tech do monitorowania wet prezydenckich na podstawie publicznych źródeł.
+        Bez ocen, z metodologią i linkami.
+      </p>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="metodologia/index.html">Metodologia</a>
+        <a class="btn" href="proces/index.html">Proces ustawy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="notice">
+      <strong>Neutralność:</strong> serwis prezentuje publicznie dostępne informacje i linki do źródeł. Bez ocen i bez rekomendacji.
+      <br/>
+      <strong>Licencje:</strong> fotografie i logotypy dodawaj wyłącznie, jeśli masz do tego prawo.
+    </div>
+    <div style="margin-top:10px">© 2025 · Źródła: prezydent.pl · Sejm API · ELI/ISAP · RCL.</div>
+  </div>
+</footer>
+  <script src="assets/app.js"></script>
+  <script src="assets/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <base href="/veto-counter/"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Proces ustawy</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <header class="header">
+  <nav class="nav" aria-label="Główna nawigacja">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">Licznik wet</div>
+        <div class="small">wersja obywatelska · fakty i źródła</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Licznik</a>
+      <a href="lista/index.html">Lista wet</a>
+      <a href="jak-to-dziala/index.html">Jak działa weto?</a>
+      <a href="proces/index.html">Proces ustawy</a>
+      <a href="historia/index.html">Historia</a>
+      <a href="metodologia/index.html">Metodologia</a>
+      <a href="api/index.html">API</a>
+      <button id="toggleModeBtn" class="btn" type="button" aria-label="Przełącz tryb wizualny/minimalny">
+        Tryb: <span id="modeLabel">Wizualny</span>
+      </button>
+    </div>
+  </nav>
+</header>
+  <main id="main" class="container">
+    
+<h1 style="margin:8px 0 4px;font-size:24px">Proces legislacyjny (infografika + wersja tekstowa)</h1>
+<div class="row">
+  <div class="card">
+    <div class="kicker">Infografika</div>
+    <svg viewBox="0 0 900 540" width="100%" role="img" aria-label="Proces: projekt → Sejm → Senat → Prezydent → po wecie Sejm">
+      <defs><linearGradient id="p" x1="0" x2="1"><stop offset="0" stop-color="rgba(255,255,255,.18)"/><stop offset="1" stop-color="rgba(255,255,255,.06)"/></linearGradient></defs>
+      <rect x="18" y="18" width="864" height="504" rx="28" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.14)" />
+      <g font-family="ui-sans-serif,system-ui" fill="rgba(255,255,255,.92)">
+        <g><rect x="60" y="90" width="210" height="90" rx="18" fill="url(#p)" stroke="rgba(255,255,255,.16)"/><text x="75" y="128" font-weight="700">Inicjatywa</text><text x="75" y="154" font-size="14" fill="rgba(255,255,255,.70)">projekt ustawy</text></g>
+        <g><rect x="330" y="90" width="210" height="90" rx="18" fill="url(#p)" stroke="rgba(255,255,255,.16)"/><text x="345" y="128" font-weight="700">Sejm</text><text x="345" y="154" font-size="14" fill="rgba(255,255,255,.70)">komisje · czytania</text><circle cx="520" cy="112" r="10" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.22)"/><text x="536" y="118" font-size="12" fill="rgba(255,255,255,.70)">konsultacje: komisje / wysłuchanie</text></g>
+        <g><rect x="600" y="90" width="210" height="90" rx="18" fill="url(#p)" stroke="rgba(255,255,255,.16)"/><text x="615" y="128" font-weight="700">Senat</text><text x="615" y="154" font-size="14" fill="rgba(255,255,255,.70)">uchwała (30 dni)</text></g>
+        <g><rect x="330" y="260" width="210" height="100" rx="18" fill="url(#p)" stroke="rgba(255,255,255,.16)"/><text x="345" y="298" font-weight="700">Prezydent</text><text x="345" y="324" font-size="14" fill="rgba(255,255,255,.70)">podpis / weto / TK</text></g>
+        <g><rect x="60" y="400" width="750" height="88" rx="18" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/><text x="75" y="438" font-weight="700">Po wecie</text><text x="75" y="464" font-size="14" fill="rgba(255,255,255,.70)">Sejm może odrzucić weto większością 3/5 (przy określonym kworum)</text></g>
+      </g>
+      <g stroke="rgba(255,255,255,.22)" stroke-width="3" fill="none" stroke-linecap="round">
+        <path d="M270 135 H330" /><path d="M540 135 H600" /><path d="M435 180 V260" /><path d="M435 360 V400" />
+      </g>
+    </svg>
+  </div>
+  <div class="card">
+    <div class="kicker">Wersja tekstowa (WCAG)</div>
+    <ol style="margin:10px 0 0;padding-left:18px;color:var(--muted)">
+      <li><strong>Inicjatywa:</strong> projekt trafia do Sejmu.</li>
+      <li><strong>Sejm:</strong> komisje, czytania, głosowania (często konsultacje).</li>
+      <li><strong>Senat:</strong> uchwała.</li>
+      <li><strong>Prezydent:</strong> podpis / weto / TK.</li>
+      <li><strong>Po wecie:</strong> Sejm może odrzucić weto większością 3/5.</li>
+    </ol>
+  </div>
+</div>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="notice">
+      <strong>Neutralność:</strong> serwis prezentuje publicznie dostępne informacje i linki do źródeł. Bez ocen i bez rekomendacji.
+      <br/>
+      <strong>Licencje:</strong> fotografie i logotypy dodawaj wyłącznie, jeśli masz do tego prawo.
+    </div>
+    <div style="margin-top:10px">© 2025 · Źródła: prezydent.pl · Sejm API · ELI/ISAP · RCL.</div>
+  </div>
+</footer>
+  <script src="assets/app.js"></script>
+  
+</body>
+</html>
